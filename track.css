@@ -70,7 +70,7 @@ h4:hover a {
 /* css slider */
 .slider{
     height: 100vh;
-    margin-top: -50px;
+    margin-top: 0px;
     position: relative;
 }
 .slider .list .item{
@@ -116,4 +116,38 @@ h4:hover a {
     opacity: 1;
     z-index: 10;
 }
+#page3 {
+    min-height: 100vh;
+    width: 100%;
+    padding: 4vw 0;
+}
 
+.elem {
+    height: 150px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+}
+
+.elem h2 {
+    font-size: 3vw;
+    position: relative;
+    z-index: 9;
+}
+
+.elem .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: #4072A7;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.25s;
+}
+
+.elem:hover .overlay {
+    top: 0;
+}
