@@ -67,6 +67,53 @@ header .nav1{
 h4:hover a {
     color: #4072A7;
 }
+
+
+
+
+span.nav2{
+    padding: 0;
+    margin: -15%;
+    display: flex;
+    justify-content:flex-end;
+
+}
+.nav2 h4{
+    padding: 5px 10px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    position: relative;
+    color: #000000bb;
+    transition: all ease 0.4s;
+    font-size: 18px;
+    overflow: hidden;
+    
+}
+.nav2 h4::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+.nav2 h4:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+.nav2 h4 a {
+    color: #ffffffbb;
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+}
+h4:hover a {
+    color: #4072A7;
+}
+
 /* css slider */
 .slider{
     height: 100vh;
