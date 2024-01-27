@@ -37,21 +37,35 @@ header .nav1{
     border: 1px solid rgb(255, 255, 255);
     border-radius: 50px;
     position: relative;
+    color: #000000bb;
+    transition: all ease 0.4s;
+    font-size: 18px;
+    overflow: hidden;
     
+}
+.nav1 h4::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+.nav1 h4:hover::after {
+    bottom: 0;
+    border-radius: 0;
 }
 .nav1 h4 a {
     color: #ffffffbb;
     text-decoration: none;
     position: relative;
     z-index: 9;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
-
-.nav1 h4:hover{
-    background-color: rgb(255, 255, 255); /* Change the background color during hover*/
-}
-.nav1 h4:hover a{
-    color:#4072A7; /* Change the text color to your desired hover color */
+h4:hover a {
+    color: #4072A7;
 }
 /* css slider */
 .slider{
